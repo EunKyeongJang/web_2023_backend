@@ -1,5 +1,6 @@
 package 과제.과제1.ex8;
 
+import java.sql.Struct;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
@@ -16,7 +17,61 @@ public class Level1_8 {
 		String output = "";
 		
 		/* 문제풀이 위치 */
-		
+		int i=0;
+		//1번 start
+		System.out.print("["+(++i)+"]작성자 : ");
+		String name=scanner.nextLine();
+		System.out.print("["+(i)+"]방문록 : ");
+		String content=scanner.nextLine();
+
+		output=i+"\t"+name+"\t"+content+"\n";
+		boardlist+=output;
+		System.out.println(header+boardlist+footer);
+		//1번 end
+
+		//2번 start
+		System.out.print("["+(++i)+"]작성자 : ");
+		name=scanner.nextLine();
+		System.out.print("["+(i)+"]방문록 : ");
+		content=scanner.nextLine();
+
+		output=i+"\t"+name+"\t"+content+"\n";
+		boardlist+=output;
+		System.out.println(header+boardlist+footer);
+		//2번 end
+
+		//3번 start
+		System.out.print("["+(++i)+"]작성자 : ");
+		name=scanner.nextLine();
+		System.out.print("["+(i)+"]방문록 : ");
+		content=scanner.nextLine();
+
+		output=i+"\t"+name+"\t"+content+"\n";
+		boardlist+=output;
+		System.out.println(header+boardlist+footer);
+		//3번 end
+
+		//4번 start
+		System.out.print("["+(++i)+"]작성자 : ");
+		name=scanner.nextLine();
+		System.out.print("["+(i)+"]방문록 : ");
+		content=scanner.nextLine();
+
+		output=i+"\t"+name+"\t"+content+"\n";
+		boardlist+=output;
+		System.out.println(header+boardlist+footer);
+		//4번 end
+
+		//5번 start
+		System.out.print("["+(++i)+"]작성자 : ");
+		name=scanner.nextLine();
+		System.out.print("["+(i)+"]방문록 : ");
+		content=scanner.nextLine();
+
+		output=i+"\t"+name+"\t"+content+"\n";
+		boardlist+=output;
+		System.out.println(header+boardlist+footer);
+		//5번 end
 		/* ----------- */
 	}
 }

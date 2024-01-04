@@ -13,7 +13,7 @@ public class Level1_7 {
 		String output = "";
 		
 		/* 문제풀이 위치 */
-		/*System.out.print("회원명 String : ");
+		System.out.print("회원명 String : ");
 		output=scanner.next();
 
 		System.out.print("상태 boolean : ");
@@ -38,31 +38,20 @@ public class Level1_7 {
 		float f=scanner.nextFloat();
 
 		System.out.print("몸무게 double : ");
-		double d=scanner.nextDouble();*/
-
-		/*System.out.println("==========회원 개인정보===========");
-		System.out.printf("|\t\t%-10s  %10s","회원명 : "+output,"|\n");
-		System.out.printf("|\t\t%-10s  %10s","상태 : "+bool,"|\n");
-		System.out.printf("|\t\t%-10s  %10s","회원번호 : "+b,"|\n");
-		System.out.printf("|\t\t%-10s  %10s","성별 : "+c,"|\n");
-		System.out.printf("|\t\t%-10s  %10s","나이 : "+s,"|\n");
-		System.out.printf("|\t\t%-10s  %10s","포인트 : "+i,"|\n");
-		System.out.printf("|\t\t%-10s  %10s","예금액 : "+l,"|\n");
-		System.out.printf("|\t\t%-10s  %10s","평균 : "+f,"|\n");
-		System.out.printf("|\t\t%-10s  %10s","평균 : "+d,"|\n");
-		System.out.println("===============================");*/
+		double d=scanner.nextDouble();
 
 		System.out.println("==========회원 개인정보===========");
-		System.out.printf("|\t\t%-10s  %10s","회원명 : "+"유재석","|\n");
-		System.out.printf("|\t\t%-10s  %10s","상태 : "+"true","|\n");
-		System.out.printf("|\t\t%-10s  %10s","회원번호 : "+"20","|\n");
-		System.out.printf("|\t\t%-10s  %10s","성별 : "+"M","|\n");
-		System.out.printf("|\t\t%-20s  %3s","나이 : "+"50","|\n");
-		System.out.printf("|\t\t%-20s  %3s","포인트 : "+"25000","|\n");
-		System.out.printf("|\t\t%-20s  %3s","예금액 : 5000000","|\n");
-		System.out.printf("|\t\t%-10s  %10s","평균 : "+"45.45","|\n");
-		System.out.printf("|\t\t%-10s  %10s","평균 : "+"75.45","|\n");
+		System.out.printf("|\t\t%-10s  %s","회원명 : "+output,"\t\t|\n");
+		System.out.printf("|\t\t%-10s  %s","상태 : "+bool,"\t\t\t|\n");
+		System.out.printf("|\t\t%-10s  %s","회원번호 : "+b,"\t\t\t|\n");
+		System.out.printf("|\t\t%-10s  %s","성별 : "+c,"\t\t\t|\n");
+		System.out.printf("|\t\t%-10s  %s","나이 : "+s,"\t\t\t|\n");
+		System.out.printf("|\t\t%-10s  %s","포인트 : "+i,"\t\t\t|\n");
+		System.out.printf("|\t\t%-10s  %s","예금액 : "+l,"\t\t|\n");
+		System.out.printf("|\t\t%-10s  %s","평균 : "+f,"\t\t\t|\n");
+		System.out.printf("|\t\t%-10s  %s","평균 : "+d,"\t\t\t|\n");
 		System.out.println("===============================");
+
 
 		/* ----------- */
 	}
