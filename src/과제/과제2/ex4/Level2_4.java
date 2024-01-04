@@ -17,16 +17,18 @@ public class Level2_4 {
 		String player = scanner.next();
 		
 		/* 문제풀이 위치 */
-		byte pNum=0;
+		byte pNum=0;	//player에서 받은 값을 비교해 가위 : 0, 바위 : 1, 보 : 2 로 pNum 에 저장
 		if(player.equals("가위")){ pNum=0; }
 		else if(player.equals("바위")){ pNum=1; }
 		else if(player.equals("보")){ pNum=2; }
 		else{ System.out.println(" 다시 입력해 주십시오."); }
-
+		
+		//com의 랜덤값을 가위, 바위, 보 로 출력
 		if(com==0){ System.out.println("comran) 가위"); }
 		if(com==1){ System.out.println("comran) 바위"); }
 		if(com==2){ System.out.println("comran) 보"); }
 
+		//승리자 확인
 		if(pNum==(com+2)%3){
 			System.out.println("result) com 승리");
 		}
