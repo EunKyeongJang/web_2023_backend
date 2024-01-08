@@ -34,6 +34,11 @@ public class Step3 {//class start
         //2. 입력받은 문자열(String) 반환. 띄어쓰기 포함
         // [ 주의 : 앞에 next() 있을 경우 하나로 취급]
             //해결1. 의미없는 nextLine()추가
+
+
+
+
+
         String str2=scanner.next();
         System.out.println("str2="+str2);
         
