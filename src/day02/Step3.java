@@ -7,7 +7,7 @@ public class Step3 {//class start
         //[p.70] 콘솔에서 키보드로부터 입력받고 변수에 저장
             //[준비물]
             //1. Scanner 클래스 : 입력에 관련된 메소드/속성 제공하는 설계도
-            //2. Scanner 클래스 이용한 객체 생성(=buffer)
+            //2. Scanner 클래스 이용
                 //Scanner scanner = new Scanner(System.in);
                 //클래스명  변수명     new 클래스명(매개변수);
                     //System.in : 시스템 입력 = 키보드
