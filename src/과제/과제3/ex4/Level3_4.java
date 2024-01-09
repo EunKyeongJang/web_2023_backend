@@ -1,4 +1,4 @@
-package 과제.과제3.과제3.ex4;
+package 과제.과제3.ex4;
 
 import java.time.LocalDateTime;
 import java.util.Scanner;
@@ -11,7 +11,22 @@ public class Level3_4 {
 		Scanner scanner = new Scanner(System.in);
 	
 		/* 문제풀이 위치 */
-	
+		boolean no=true;
+		int sum=0;
+		while(no){
+			System.out.print("input : ");
+			int inputVal=scanner.nextInt();
+
+			sum+=inputVal;
+			if(sum<0){
+				break;
+			}
+
+			for(int i=0; i<sum; i++){
+				System.out.print("■ ");
+			}
+			System.out.println("");
+		}
 		/* ----------- */
 
 	}
