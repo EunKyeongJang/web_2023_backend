@@ -16,7 +16,30 @@ public class Level4_4 {
 
 		while ( true ) {
 			/* 문제풀이 위치 */
+			X_AXIS[ x ] = "★";
+			for(int i=0; i<X_AXIS.length; i++){
+				System.out.print(X_AXIS[i]+"\t");
+			}
+			System.out.print("\n1.전진 2.후진 선택> ");
+			int no=scanner.nextInt();
 
+			if(no==1){//전진
+				if(x==X_AXIS.length-1){
+					continue;
+				}
+				X_AXIS[ x ]=null;
+				x++;
+			}
+			else if(no==2){//후진
+				if(x==0){
+					continue;
+				}
+				X_AXIS[ x ]=null;
+				x--;
+			}
+			else{//1,2 외의 다른 값을 입력했을때
+				System.out.println("다시 입력해 주세요.");
+			}
 			/* ----------- */
 		}
 	}

@@ -17,15 +17,23 @@ public class Level4_3 {
 
 		System.out.print("정렬 전 :");
 		for(int i=0; i<point.length; i++){
-			System.out.println(point[i]+" ");
+			System.out.print(point[i]+" ");
 		}
 
-		System.out.print("정렬 후 : ");
+		System.out.print("\n정렬 후 : ");
 		for(int a=0; a<point.length-1; a++){
 			for(int b=a+1; b<point.length; b++){
-
-			}
+				if(point[a]>point[b]){
+					temp=point[a];
+					point[a]=point[b];
+					point[b]=temp;
+				}//if end
+			}//for end
+		}//for end
+		for(int i=0; i<point.length; i++){
+			System.out.print(point[i]+" ");
 		}
+
 		/* ----------- */
 	}
 }
