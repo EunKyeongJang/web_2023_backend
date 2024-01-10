@@ -7,7 +7,7 @@ public class Step4 {//class start
 
         Scanner scanner=new Scanner(System.in);
             //!! : Scanenr 클래스 입력 시 [라이브러리 -> 호출]
-                //자동완성 시 자동으로 틀래스 위에 import java.util.Scanner; 확인
+                //자동완성 시 자동으로 클래스 위에 import java.util.Scanner; 확인
                 //직접 입력 시 직접 클래스 위에 import.util.Scanner; 작성
                 //System, String 등등 package java.lang; 안에 있는 클래스 import 생략
         //if 조건문
