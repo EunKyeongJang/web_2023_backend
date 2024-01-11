@@ -26,8 +26,8 @@ public class Step1 {//class start
         //주사위 난수 : 1~6 사이의 난수 생성
         //1.
         //int num=Math.random();  //0.xx ~ 1.xx
-        //int num=Math.random();  //0.xx ~ 1.xx * 6  => 0 ~ 6 미만
-        //int num=Math.random();  //0.xx ~ 1.xx * 6 + 1 => 1 ~ 7 미만
+        //int num=Math.random()*6;  //0.xx ~ 1.xx * 6  => 0 ~ 6 미만
+        //int num=Math.random()*6+1;  //0.xx ~ 1.xx * 6 + 1 => 1 ~ 7 미만
         int num=(int)(Math.random()*6+1);   //(int) 0.xx ~ 1.xx * 6 + 1 => 1 ~ 7 미만 => 1 ~ 6
 
         //2.
