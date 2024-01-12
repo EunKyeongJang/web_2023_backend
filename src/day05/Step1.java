@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Step1 {//class start : 모든 자바코드는 클래스 안에 작성
     public static void main(String[] args) {//main start
         // : 자바 코드 집입점(스레드 포함 : 스레드(thread)란 프로세스(process) 내에서 실제로 작업을 수행하는 주체를 의미,
-                                    // 사용자가 작성한 프로그램이 운영체제에 의해 메모리 공간을 할당받아 실행 중인 것)
+        // 사용자가 작성한 프로그램이 운영체제에 의해 메모리 공간을 할당받아 실행 중인 것)
         //3-1. 입력객체 생성 [Scanner 객체가 필요한 이유 : 입력관련 메소드/함수 제공.(다른것도 있음)]
         Scanner scanner=new Scanner(System.in);
 
