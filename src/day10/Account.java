@@ -1,6 +1,6 @@
 package day10;
 
-public class Account {//객체 설계 클래스
+public class Account {//객체 설계 클래스 : data 모델 : 기능에 대한 함수x
 
     //클래스 멤버
     //1. 필드 : 정적 vs 인스턴스(공용x)
