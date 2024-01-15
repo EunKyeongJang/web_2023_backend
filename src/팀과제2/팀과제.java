@@ -17,6 +17,7 @@ public class 팀과제 {//class start
 
         서비스형태[] 서비스형태배열 = new 서비스형태[]{Basic,Standard,Premiunm};
 
+
         for(int i=0; i<서비스형태배열.length; i++){
             System.out.println(서비스형태배열[i].이름);
         }
