@@ -12,4 +12,5 @@ public class 서비스형태 {
         this.사용인원=사용인원;
         this.금액=금액;
     }
+
 }
