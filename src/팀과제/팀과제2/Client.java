@@ -1,10 +1,15 @@
-package 팀과제2;
+package 팀과제.팀과제2;
 
 public class Client {
-    String id="admin";
-    String pw="1234";
+    String id;
+    String pw;
     int 구독기간;
     String 서비스형태;
+
+    Client(String id, String pw){
+        this.id=id;
+        this.pw=pw;
+    }
 
     @Override
     public String toString() {

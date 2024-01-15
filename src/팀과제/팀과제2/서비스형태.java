@@ -1,4 +1,4 @@
-package 팀과제2;
+package 팀과제.팀과제2;
 
 public class 서비스형태 {
     String 이름;
