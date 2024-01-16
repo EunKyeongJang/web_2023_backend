@@ -78,7 +78,7 @@ public class MemberSys {
 					System.out.println("로그인 실패");
 				}
 					
-			}//if end
+			}// if end
 
 		} // w e 
 	} // m e 
