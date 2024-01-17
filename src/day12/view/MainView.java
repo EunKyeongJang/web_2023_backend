@@ -40,6 +40,9 @@ public class MainView {
             else if(ch==3){//아이디 찾기 페이지 이동
                 MemberView.getInstance().findId();
             }
+            else if(ch==4){
+                MemberView.getInstance().newpass();
+            }
         }
     }//f end
 

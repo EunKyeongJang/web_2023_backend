@@ -55,4 +55,10 @@ public class MemberController {
         String resultId=ModelDao.getInstance().findId(memeberDto);
         return resultId;
     }
+
+    //4. 새로운 비밀번호 발급 메소드
+    public String newpass(MemeberDto memeberDto){
+        String result=ModelDao.getInstance().newpass(memeberDto);
+        return result;
+    }
 }

@@ -93,5 +93,24 @@ public class MemberView {
 
         System.out.println("아이디: "+resultId);
 
+    }//f end
+
+    //4. 새로운 비밀번호 발급 메소드
+    public void newpass(){
+        Scanner scanner=MainView.getInstance().scanner;
+
+        //입력
+        System.out.print("아이디 : ");
+            String id=scanner.next();
+        System.out.println("전화번호 : ");
+            String phone=scanner.next();
+
+        MemeberDto memeberDto=new MemeberDto();
+        memeberDto.setId(id);
+        memeberDto.setPhone(phone);
+
+        String result=MemberController.getInstance().newpass(memeberDto);
+
+        System.out.println(memeberDto.getId()+"님의 새로운 비밀번호 : "+result);
     }
-}
+}//c end

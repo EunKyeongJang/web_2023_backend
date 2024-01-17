@@ -1,6 +1,7 @@
 package day12.model;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 //DAO : 데이터베이스 접근객체
 public class ModelDao {
@@ -9,7 +10,8 @@ public class ModelDao {
     private ModelDao(){}
     private static ModelDao modelDao=new ModelDao();
     public static ModelDao getInstance(){return modelDao;}
-    
+
+
     //DB대신에 배열
         //배열 사용 시 불편한점 : 고정길이
         //고정길이 배열을 가변길이 배열로 구현 => 제공하는 라이브러리 : 컬랙션(수집) 프레임워크(라이브러리 집합)
@@ -20,7 +22,7 @@ public class ModelDao {
             //저장 : .add(저장할 객체)         [인덱스]=저장할데이터
                 //회원가입
             //개수 : .size(길이)                배열명.length
-            //호출 : .get()                     배열명[인덱스]  
+            //호출 : .get()                     배열명[인덱스]
                 //로그인
             //삭제 : .remove(인덱스)             배열명[인덱스]=null
     //MemeberDto[] memeberDtos=new MemeberDto[100];
@@ -58,7 +60,7 @@ public class ModelDao {
          */
         //return false;   //회원가입 실패
     }//fuction end
-    
+
     //2. 로그인 메소드
     public boolean login(MemeberDto memeberDto){
         System.out.println("[3] ModelDao.login");
@@ -94,4 +96,29 @@ public class ModelDao {
         }
         return "존재하는 아이디 정보가 없습니다.";
     }
+
+    //4. 새로운 비밀번호 발급 메소드
+    public String newpass(MemeberDto memeberDto){
+        //랜덤 비밀번호 생성
+        String sRanNo="";
+        Random random=new Random();
+        for(int i=1; i<=6; i++) {
+            int ranNo = random.nextInt(26) + 97;
+            char ch=(char)ranNo;
+            sRanNo+=ch;
+        }
+
+        //새로 생성된 비밀번호 넣기
+        for(int j=0; j<memeberDtos.size(); j++){
+            if(memeberDtos.get(j).getId().equals(memeberDto.getId())){
+                if(memeberDtos.get(j).getPhone().equals(memeberDto.getPhone())){
+                    memeberDtos.get(j).setPw(sRanNo);
+                    return sRanNo;
+                }
+            }
+        }
+
+        return "해당하는 계정을 찾지 못했습니다.";
+    }
+
 }
