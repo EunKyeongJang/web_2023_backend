@@ -1,6 +1,9 @@
 package 과제.과제6;
 
+import java.util.Scanner;
+
 public class Member {
+
     private String id;
     private String pass;
     private String name;
@@ -9,14 +12,6 @@ public class Member {
 
     //생성자
     Member(){};
-    Member(String id, String pass, String name, String phone, int age){
-        this.id=id;
-        this.pass=pass;
-        this.name=name;
-        this.phone=phone;
-        this.age=age;
-    };
-
 
     //getter
     String getId(){return id;}
@@ -31,7 +26,13 @@ public class Member {
     void setName(String name){this.name=name;}
     void setPhone(String phone){this.phone=phone;}
     void setAge(int age){this.age=age;}
-}
+
+
+
+
+
+
+}//class end
 /*
 	주제 : 회원제 시스템 part2
 	 	- Member , MemberSys 클래스를 이용하여 아래 조건에 따라. 코드를 완성하시오.
