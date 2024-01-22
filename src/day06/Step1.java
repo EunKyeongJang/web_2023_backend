@@ -6,8 +6,8 @@ public class Step1 {//class start
     public static void main(String[] args) {//main start
         //p.149 : null
             //- 아직 참조(번지)를 저장하고 있지 않다는 뜻
-        int[] intArray=null;
-            //스택영역에 변수 생성 : int[] 'intArray' 변수 선언
+//        int[] intArray=null;
+//            //스택영역에 변수 생성 : int[] 'intArray' 변수 선언
         //intArray[0]=10;
         //.NullPointerException : 배열 변수(스택영역-참조주소)는 있지만 배열 객체(힙영역)이 실제로 존재하지 않음
 
@@ -81,3 +81,5 @@ public class Step1 {//class start
     //- main()함수는 자바 진입/시작점 --> main함수 끝나면 힙영역도 모두 사라짐.
     
 }//class end
+
+
