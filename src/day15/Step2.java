@@ -11,5 +11,6 @@ public class Step2 {
         smartPhone.turnOn();
         smartPhone.internetSearch();
         smartPhone.turnOff();
+        phone1.turnOff();
     }
 }
