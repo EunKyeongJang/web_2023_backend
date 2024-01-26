@@ -18,7 +18,7 @@ public class BoardMainView {
         while(true){
             System.out.println("============== ezen 게시판 ===============");
             //추후에 현재 게시물 출력 메소드가 들어갈 자리
-            System.out.println("1.글쓰기 | 2.모든글츨력 | 3. 개별글출력 | 4.글수정 | 5.글삭제 | 6.로그아웃");
+            System.out.println("1.글쓰기 | 2.글보기 | 4.글수정 | 5.글삭제 | 6.로그아웃");
             System.out.print("선택>");
             int ch=scanner.nextInt();
             
@@ -26,7 +26,7 @@ public class BoardMainView {
                 BoardView.getInstance().write();
             }
             else if(ch==2){
-
+                BoardView.getInstance().showAll();
             }
             else if(ch==3){
                 System.out.println("[안내] 로그아웃 되었습니다.");
