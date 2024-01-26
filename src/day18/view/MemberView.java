@@ -1,7 +1,6 @@
 package day18.view;
 
 import day18.controller.MemberController;
-import day18.model.dto.BoardDto;
 import day18.model.dto.MemberDto;
 
 public class MemberView {
@@ -60,7 +59,7 @@ public class MemberView {
         if(result){
             System.out.println("[안내]로그인성공");
             //게시판화면으로 이동할 예정. <페이지 전환>
-            BoardView.getInstance().run();
+            BoardMainView.getInstance().run();
         }
         else{
             System.out.println("[안내] 로그인 실패");

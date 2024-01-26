@@ -1,35 +1,36 @@
 package day18.view;
 
-import day13.Step4.pakage1.B;
-import day18.controller.MemberController;
-
-import java.util.Scanner;
+import day18.controller.BoardController;
+import day18.model.dto.BoardDto;
+import day18.model.dto.CategoryDto;
 
 public class BoardView {
     //싱글톤
     private BoardView(){}
     private static BoardView boardView=new BoardView();
     public static BoardView getInstance(){return boardView;}
-    
-    //입력객체
-    Scanner scanner=MainView.getInstance().scanner;
-    
-    //0. 로그인 성공시 출력되는 화면
-    public void run(){
-        while(true){
-            System.out.println("============== ezen 게시판 ===============");
-            //추후에 현재 게시물 출력 메소드가 들어갈 자리
-            System.out.println("1.글쓰기 | 2.글보기 | 3.로그아웃");
-            System.out.print("선택>");
-            int ch=scanner.nextInt();
-            
-            if(ch==1){}
-            else if(ch==2){}
-            else if(ch==3){
-                System.out.println("[안내] 로그아웃 되었습니다.");
-                MemberController.getInstance().logout();    //로그아웃 처리 요청
-                return; //현재 메소드 종료
-            }
-        }//w end
-    }//m end
-}//c end
+    public void write(){
+        //카테고리 출력
+        //입력
+        System.out.print("카테고리 1.자유게시판 | 2.QnA | 3.리뷰");
+        int ch=MainView.getInstance().scanner.nextInt(); //컨트롤러 매개값
+        //컨트롤러 호출
+        String result= BoardController.getInstance().selectC(ch);
+        //호출 결과 출력
+        System.out.println("카테고리 : "+result);
+
+        //글쓰기
+        //입력
+        System.out.println("제목 : ");
+        String title=MainView.getInstance().scanner.nextLine();
+        System.out.println("내용 : ");
+        String content=MainView.getInstance().scanner.nextLine();
+
+        //객체 생성 후 입력값 저장
+        BoardDto boardDto=new BoardDto();
+        boardDto.setBtitle(title);
+        boardDto.setBcontent(content);
+
+
+    }
+}

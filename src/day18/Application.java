@@ -5,7 +5,7 @@ import day18.view.MainView;
 public class Application {//class
     public static void main(String[] args) {
        MainView.getInstance().run();
-    }//m end\
+    }//m end
 }//c end
 /*
     -->다른 클래스 내 메소드를 호출하는 방법(=외부 클래스에서 메소드를 호출하는 방법)
