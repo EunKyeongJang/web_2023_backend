@@ -31,6 +31,13 @@ public class BoardView {
         boardDto.setBtitle(title);
         boardDto.setBcontent(content);
 
-
+        //결과출력
+        boolean wResult=BoardController.getInstance().write(boardDto);
+        if(wResult){
+            System.out.println("게시물이 등록되었습니다.");
+        }
+        else {
+            System.out.println("게시물 등록에 실패하였습니다.");
+        }
     }
 }
