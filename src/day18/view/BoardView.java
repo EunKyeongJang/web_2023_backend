@@ -49,7 +49,7 @@ public class BoardView {
     public void showAll(){
         System.out.println("==============EZEN게시물==============");
         System.out.printf("%10s %10s %10s %10s %10s %10s\n","게시물번호", "카테고리", "작성자", "작성일", "조회수", "제목");
-        System.out.printf("%10s %10s %10s %10s %10s %10s\n",);
+        //System.out.printf("%10s %10s %10s %10s %10s %10s\n",); 여기까지 함
 
     }
 }//c end
